@@ -8,7 +8,21 @@ on:
       - 'v*'
     branches:
       - main
+    paths-ignore:
+      - '**.md'
+      - 'doc/**'
+      - 'docs/**'
+      - 'LICENSE'
+      - '.gitignore'
+      - '**.txt'
   pull_request:
+    paths-ignore:
+      - '**.md'
+      - 'doc/**'
+      - 'docs/**'
+      - 'LICENSE'
+      - '.gitignore'
+      - '**.txt'
   workflow_dispatch:
 
 concurrency:
